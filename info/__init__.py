@@ -14,4 +14,4 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         "server": os.getenv("WEBSITE_HOSTNAME", ""),
     }
 
-    return func.HttpResponse(json.dumps(params))
+    return func.HttpResponse(json.dumps(params), mimetype='application/json')

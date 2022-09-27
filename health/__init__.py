@@ -10,4 +10,4 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 
     params = {"health": "ok"}
 
-    return func.HttpResponse(json.dumps(params))
+    return func.HttpResponse(json.dumps(params), mimetype='application/json')
